@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+html,
+body,
+header,
+main,
+article,
+section,
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+div,
+ul,
+li,
+a,
+button,
+input {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.telaCheia {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.caixaPai {
+  width: 90%;
+  height: 85%;
+  background-color: #e2242486;
+  border-radius: 5px 50px 5px 50px;
+  padding: 20px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 0 4px 3px 4px;
+  border-bottom: 2px solid grey;
+  text-transform: capitalize;
+}
+.bntLista {
+  padding: 1vh 5vw;
+  border-radius: 50px 3px 50px 3px;
+  border: none;
+  font-style: italic;
+  background-color: #83dddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listaPai {
+  height: 90%;
+  width: 100%;
+}
+
+.input {
+  padding: 5px 3px 5px 3px;
+  border: none;
+  border-radius: 17px 0 17px 0;
+}
+.bntInput {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 6px;
+  border-radius: 20px 3px 20px 3px;
+}
+
+.formTopo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid gray;
 }
