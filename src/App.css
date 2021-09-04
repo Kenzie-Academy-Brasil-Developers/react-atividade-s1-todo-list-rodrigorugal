@@ -46,7 +46,9 @@ input {
   align-items: center;
   justify-content: space-evenly;
 }
-
+.caixaPai h1 {
+  color: rgb(171, 195, 216);
+}
 li {
   display: flex;
   width: 100%;
@@ -79,9 +81,8 @@ li {
   border-radius: 20px;
 }
 .listaPai::-webkit-scrollbar-thumb {
-  background-color: #0000ff;
+  background-color: #282c34;
   border-radius: 20px;
-  border: 3px solid #ffa500;
 }
 
 .input {

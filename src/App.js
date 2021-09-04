@@ -19,6 +19,7 @@ function App() {
   return (
     <div className="telaCheia">
       <div className="caixaPai">
+        <h1>Gerenciador de tarefas</h1>
         <Form addTodo={addTodo} />
         <TodoList todos={todos} handleTodo={handleTodo}></TodoList>
       </div>
