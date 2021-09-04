@@ -1,7 +1,7 @@
 const TodoList = ({ todos, handleTodo }) => {
   return (
-    <>
-      <div className="listaPai">
+    <div className="listaPai">
+      <div>
         <ul>
           {todos.map((todo, index) => (
             <li key={index}>
@@ -16,7 +16,7 @@ const TodoList = ({ todos, handleTodo }) => {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

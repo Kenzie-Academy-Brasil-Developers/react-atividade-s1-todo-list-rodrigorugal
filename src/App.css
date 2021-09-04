@@ -19,6 +19,9 @@ input {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .telaCheia {
@@ -32,6 +35,7 @@ input {
 }
 .caixaPai {
   width: 90%;
+  max-width: 600px;
   height: 85%;
   background-color: #e2242486;
   border-radius: 5px 50px 5px 50px;
@@ -64,20 +68,47 @@ li {
 .listaPai {
   height: 90%;
   width: 100%;
+  overflow-y: auto;
+  scrollbar-width: 20px;
+}
+.listaPai::-webkit-scrollbar {
+  width: 10px;
+}
+.listaPai::-webkit-scrollbar-track {
+  background: #282c3450;
+  border-radius: 20px;
+}
+.listaPai::-webkit-scrollbar-thumb {
+  background-color: #0000ff;
+  border-radius: 20px;
+  border: 3px solid #ffa500;
 }
 
 .input {
+  width: 73%;
+  max-width: 400px;
   padding: 5px 3px 5px 3px;
   border: none;
-  border-radius: 17px 0 17px 0;
+  border-radius: 15px 0 15px 0;
 }
+.input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
 .bntInput {
-  padding: 5px 12px;
+  padding: 1vh 3.8vw;
   border: none;
   border-radius: 6px;
   border-radius: 20px 3px 20px 3px;
+  font-weight: 600;
 }
-
+.bntInput:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
 .formTopo {
   display: flex;
   align-items: center;

@@ -2,6 +2,11 @@ import { useState } from "react";
 const Form = ({ addTodo }) => {
   const [userInput, setUserInput] = useState("");
 
+  const limpaInput = () => {
+    addTodo(userInput);
+    setUserInput("");
+  };
+
   return (
     <div className="formTopo">
       <>
@@ -11,7 +16,7 @@ const Form = ({ addTodo }) => {
           value={userInput}
           onChange={(event) => setUserInput(event.target.value)}
         />
-        <button className="bntInput" onClick={() => addTodo(userInput)}>
+        <button className="bntInput" onClick={limpaInput}>
           Listar
         </button>
       </>
